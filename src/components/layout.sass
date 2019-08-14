@@ -1,0 +1,317 @@
+html, body
+    padding: 0
+    margin: 0
+    font-family: 'miller-text'
+    font-weight: 300
+    font-size: 16px
+    color: #444
+
+em
+    font-style: italic
+    font-weight: 400
+
+a
+    text-decoration: none
+    color: #333
+
+nav a:hover
+    border-bottom: 1px solid #333
+
+ul, li
+    list-style: none
+    padding: 0
+    margin: 0
+    display: inline-block
+
+.responsive-img
+    width: 100%
+    height: auto
+
+header.sticky
+    position: fixed
+    width: 100%
+    background: white
+    top: 0
+    z-index: 1
+
+header .header-inner, footer
+    max-width: 1000px
+    margin: auto
+    padding: 10px 40px
+
+header
+    .header-inner
+        display: flex
+        align-items: center
+        flex-flow: row wrap
+
+    .header-left
+        flex: 1
+
+    .header-center
+        flex: 2
+        text-align: center
+
+    .header-right
+        flex: 1
+        text-align: right
+
+.social
+    display: block
+
+    a
+        opacity: 0.5
+        transition: all 2s
+
+    a:hover
+        opacity: 1
+
+    img
+        width: 16px
+        height: 16px
+        padding: 2px
+
+.letterhead
+    margin-top: 40px
+    text-align: center
+
+    .letterhead-img
+        width: 300px
+        height: auto
+
+    hr
+        width: 160px
+        height: 0px
+        margin: auto
+        border-top: 1px solid black
+        opacity: 0.3
+
+hgroup
+    text-align: center
+    letter-spacing: 0.05em
+    font-variant: small-caps
+    text-transform: lowercase
+    padding: 0
+    margin: 10px 0
+
+    h1
+        padding-top: 0
+        margin: 0
+        font-size: 32px
+
+        font-weight: normal
+        font-family: 'alternate-gothic-no-3-d'
+        font-variant: normal
+        text-transform: uppercase
+        letter-spacing: 0
+        color: firebrick
+        font-size: 38px
+
+
+    h2
+        margin: 0
+        font-size: 16px
+        font-weight: normal
+
+    .ampersand
+        height: 12px
+        width: 12px
+        vertical-align: middle
+
+header
+    nav
+        letter-spacing: 0.05em
+        font-size: 15px
+        font-weight: normal
+        font-variant: small-caps
+
+        li
+            padding: 0 4px
+
+main
+    padding: 20px
+    max-width: 1000px
+    margin: auto
+
+    h2
+        font-size: 20px
+        letter-spacing: 0.05em
+        text-align: center
+        font-weight: 700
+
+.grid
+    ul
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -5px
+
+        li, li.full
+            flex: 100%
+            margin: 5px
+
+            a
+                display: block
+                overflow: hidden
+
+                img
+                    transition: all 1s
+                    transform: scale(1)
+                    display: block
+                    opacity: 1
+
+            a:hover
+                img
+                    transform: scale(1.05)
+
+
+@media (min-width: 600px)
+    main
+        padding: 20px 40px
+
+    .grid ul li
+        flex: calc(50% - 10px)
+
+    .grid ul li.third
+        flex: calc(33.333333333% - 10px)
+
+footer
+    text-align: center
+    padding-bottom: 32px
+    letter-spacing: 0.05em
+    font-size: 12px
+    font-weight: normal
+    font-variant: small-caps
+    text-transform: lowercase
+    padding-top: 0
+
+.react-modal
+    display: block
+    border: none
+    border-radius: 0
+    outline: none
+
+.react-modal-overlay
+    z-index: 1000
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, 0.75)
+
+.react-modal-content-inner
+    max-height: 94vh
+    max-height: 94vh
+    max-width: 1000px
+    width: 94vw
+    position: absolute
+    left: 50%
+    top: 50%
+    right: auto
+    bottom: auto
+    transform: translate(-50%, -50%)
+    overflow: auto
+    color: white
+
+    &.contact-modal-inner
+        width: 200px
+        background: white
+        color: black
+        padding: 30px 40px
+        text-align: center
+
+        .social
+            margin-top: 50px
+
+            img
+                width: 20px
+                height: 20px
+                padding: 0 4px
+
+
+    &.about-modal-inner
+        width: 500px
+        box-sizing: border-box
+        background: white
+        color: black
+        padding: 30px 60px
+        text-align: center
+        p
+            text-align: left
+            line-height: 1.6
+            font-size: 15px
+            margin-bottom: 1.6em
+
+    .modal-img-link
+        display: flex
+        justify-content: center
+
+    .modal-responsive-img
+        object-fit: contain
+        max-width: 1000px
+        max-height: 94vh
+
+.react-modal-close-btn
+    float: right
+    border: none
+    outline: none
+    background-image: url(/icon-clear.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    width: 50px
+    height: 50px
+    position: absolute
+    top: 10px
+    right: 10px
+
+    @media (max-width: 51.25rem)
+        width: 30px
+        height: 30px
+
+body.ReactModal__Body--open
+    overflow: hidden
+
+
+.about-content, .contact-content
+    h3
+        font-weight: normal
+        font-family: 'alternate-gothic-no-3-d'
+        text-transform: uppercase
+        font-size: 32px
+        margin-bottom: 16px
+        margin-top: 0
+        display: inline-block
+        border-bottom: 1px solid #cccccc
+        padding-bottom: 8px
+
+    em, dt
+        font-variant: small-caps
+        font-style: normal
+        text-transform: lowercase
+        letter-spacing: 0.05em
+
+    dd
+        margin: 0
+        padding: 0
+        margin-bottom: 16px
+
+    ul, li
+        display: block
+
+.project-page-img
+    max-height: 100vh
+    object-fit: contain
+
+.contact-content-page
+    text-align: center
+.contact-content-social
+    text-align: center
+.about-content-page
+    text-align: center
+    p
+        text-align: left
+        max-width: 500px
+        margin: auto
+        line-height: 1.6
+        font-size: 15px
+        margin-bottom: 1.6em
