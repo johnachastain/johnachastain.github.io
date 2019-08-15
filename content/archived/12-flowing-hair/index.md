@@ -5,7 +5,7 @@ description: ""
 thumb: './flowing-hair.jpg'
 full: './flowing-hair.jpg'
 size: "full"
-order: '15'
+slug: '/flowing-hair/'
 ---
 
 
