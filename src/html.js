@@ -12,6 +12,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="stylesheet" href="https://use.typekit.net/tkw5wik.css"></link>
+        <meta name="google-site-verification" content="-Os-U_F5fF5JuUdqqtfsVoR7oXE2Z_ahCz1mKjz-y8c" />
 
         {props.headComponents}
       </head>
