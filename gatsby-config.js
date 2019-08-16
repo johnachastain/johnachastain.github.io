@@ -3,7 +3,7 @@ module.exports = {
     title: `John Andrew Chastain | Art &amp; Illustration`,
     author: `John Chastain`,
     description: `John Andrew Chastain | Art &amp; Illustration`,
-    siteUrl: `http://johnandrewchatain.com/`,
+    siteUrl: `https://johnandrewchatain.com/`,
   },
   plugins: [
     {
@@ -88,6 +88,7 @@ module.exports = {
           overlayClassName: "react-modal-overlay",
         },
       }
-    }
+    },
+    `gatsby-plugin-advanced-sitemap`
   ],
 }
