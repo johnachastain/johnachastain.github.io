@@ -1,7 +1,7 @@
 ---
-title: Hello World 8
+title: "Portrait of Will Roper"
 date: "2015-05-01T22:12:03.284Z"
-description: ""
+description: "Colored pencil on toned paper 8 1/2 x 11in"
 thumb: './will-roper.jpg'
 full: './will-roper.jpg'
 size: "third"

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `John Andrew Chastain | Art &amp; Illustration`,
+    title: `John Andrew Chastain | Art and Illustration`,
     author: `John Chastain`,
-    description: `John Andrew Chastain | Art &amp; Illustration`,
+    description: `John Chastain is an artist and illustrator living and working in Indianapolis, Indiana.`,
     siteUrl: `https://johnandrewchatain.com/`,
   },
   plugins: [

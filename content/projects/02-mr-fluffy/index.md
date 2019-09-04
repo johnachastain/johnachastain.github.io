@@ -1,7 +1,7 @@
 ---
-title: Hello World 2
+title: "Mr. Fluffy"
 date: "2015-05-01T22:12:03.284Z"
-description: ""
+description: "Digital painting 2550 x 3300px"
 thumb: './mr-fluffy.jpg'
 full: './mr-fluffy.jpg'
 size: ""
